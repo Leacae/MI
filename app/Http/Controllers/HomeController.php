@@ -26,6 +26,7 @@ class HomeController extends Controller
      * @return \Illuminate\View\View
      */
     public function index(){
+        $var=1+1;
         dump($this->getHomeTopCategory());
         $sliders=App::call([$this,'getSliders']);
         $promos=App::call([$this,'getPromos']);
